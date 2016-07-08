@@ -8,21 +8,21 @@ $(document).ready(function () {
         var productNameInBasket;
         var productCount;
         var inBasket = false;
-        
+
         $('.productInBasket').each(function (i, elem) {
             productNameInBasket = $(elem).children('.productName');
             productCountInBasket = $(elem).children('.productCount');
-            
-             if (productName == productNameInBasket.text()) {
+
+            if (productName == productNameInBasket.text()) {
                 inBasket = true;
             }
-            
+
         });
 
         $('.productInBasket').each(function (i, elem) {
             productNameInBasket = $(elem).children('.productName');
             productCountInBasket = $(elem).children('.productCount');
-            
+
 
 
             if (inBasket && productName == productNameInBasket.text()) {
@@ -40,8 +40,8 @@ $(document).ready(function () {
 
 
                 $('.basket').prepend(newProduct);
-                
-            }
+
+            };
 
 
 
@@ -51,32 +51,52 @@ $(document).ready(function () {
 
 });
 
-$('.testBtn').click(function () {
-    var basket = $('.basket');
-    var productName = 'Хлеб';
-    var productCount;
-    //     console.log(productName);
 
-    $('.productInBasket').each(function (i, elem) {
-        //       this.productName =  productName;
-        productNameInBasket = $(elem).children('.productName');
-        productCountInBasket = $(elem).children('.productCount');
+$(document).on('click', '.productInBasket', function () {
 
-        if (productName == productNameInBasket.text()) {
-            console.log(productName);
-            //        console.log(productName);
-            //        console.log(productNameInBasket.text());
+    productCountInBasket = $(this).children('.productCount');
 
-            productCountInBasket.text(parseInt(productCountInBasket.text()) + 1);
-
-        }
+    if (productCountInBasket.text() > 1) {
+        productCountInBasket.text(parseInt(productCountInBasket.text()) - 1);
+    } else {
+        $(this).remove();
+    }
 
 
 
-    });
 });
 
-//            function countProduct(productName) {
-//                var count = 0;
-//                basket = $('.basket').children().each();
-//            };
+
+//$(document).on('dblclick', '.productInBasket', function () {
+//    
+//    $(this).remove();
+//});
+
+
+
+
+//
+//$('.testBtn').click(function () {
+//    var basket = $('.basket');
+//    var productName = 'Хлеб';
+//    var productCount;
+//    //     console.log(productName);
+//
+//    $('.productInBasket').each(function (i, elem) {
+//        //       this.productName =  productName;
+//        productNameInBasket = $(elem).children('.productName');
+//        productCountInBasket = $(elem).children('.productCount');
+//
+//        if (productName == productNameInBasket.text()) {
+//            console.log(productName);
+//            //        console.log(productName);
+//            //        console.log(productNameInBasket.text());
+//
+//            productCountInBasket.text(parseInt(productCountInBasket.text()) + 1);
+//
+//        }
+//
+//
+//
+//    });
+//});
