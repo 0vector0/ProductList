@@ -7,7 +7,11 @@ $(document).ready(function () {
         var basket = $('.basket');
         var productNameInBasket;
         var productCount;
+
         var inBasket = false;
+
+
+
 
         $('.productInBasket').each(function (i, elem) {
             productNameInBasket = $(elem).children('.productName');
@@ -15,7 +19,7 @@ $(document).ready(function () {
 
             if (productName == productNameInBasket.text()) {
                 inBasket = true;
-            }
+            };
 
         });
 
@@ -46,6 +50,16 @@ $(document).ready(function () {
 
 
         });
+         if($('.productInBasket').length == 0) {
+             var count = 1;
+                var newProduct = $("<div class='productInBasket'></div>")
+                    .append("<span class='productName'>" + productName + "</span>")
+                    .append("<span> - </span>")
+                    .append("<span class=\"productCount\">" + count + "</span>");
+
+
+                $('.basket').prepend(newProduct);
+        };
 
     });
 
