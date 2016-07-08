@@ -7,16 +7,31 @@ $(document).ready(function () {
         var basket = $('.basket');
         var productNameInBasket;
         var productCount;
+        var inBasket = false;
+        
+        $('.productInBasket').each(function (i, elem) {
+            productNameInBasket = $(elem).children('.productName');
+            productCountInBasket = $(elem).children('.productCount');
+            
+             if (productName == productNameInBasket.text()) {
+                inBasket = true;
+            }
+            
+        });
 
         $('.productInBasket').each(function (i, elem) {
             productNameInBasket = $(elem).children('.productName');
             productCountInBasket = $(elem).children('.productCount');
+            
 
 
-            if (productNameInBasket.text() == productName) {
+            if (inBasket && productName == productNameInBasket.text()) {
                 productCountInBasket.text(parseInt(productCountInBasket.text()) + 1);
 
-            } else {
+
+            }
+            if (!inBasket) {
+
                 var count = 1;
                 var newProduct = $("<div class='productInBasket'></div>")
                     .append("<span class='productName'>" + productName + "</span>")
@@ -25,6 +40,7 @@ $(document).ready(function () {
 
 
                 $('.basket').prepend(newProduct);
+                
             }
 
 
@@ -35,23 +51,31 @@ $(document).ready(function () {
 
 });
 
-//$('.testBtn').click(function () {
-//            var basket = $('.basket');
-//            var productName;
-//            var productCount;
-//
-//            $('.productInBasket').each(function (i, elem) {
-//                productName = $(elem).children('.productName');
-//                productCount = $(elem).children('.productCount');
-//
-//                productCount.text(parseInt(productCount.text()) + 1);
-//
-//
-//
-//
-//
-//            });
-//
+$('.testBtn').click(function () {
+    var basket = $('.basket');
+    var productName = 'Хлеб';
+    var productCount;
+    //     console.log(productName);
+
+    $('.productInBasket').each(function (i, elem) {
+        //       this.productName =  productName;
+        productNameInBasket = $(elem).children('.productName');
+        productCountInBasket = $(elem).children('.productCount');
+
+        if (productName == productNameInBasket.text()) {
+            console.log(productName);
+            //        console.log(productName);
+            //        console.log(productNameInBasket.text());
+
+            productCountInBasket.text(parseInt(productCountInBasket.text()) + 1);
+
+        }
+
+
+
+    });
+});
+
 //            function countProduct(productName) {
 //                var count = 0;
 //                basket = $('.basket').children().each();
