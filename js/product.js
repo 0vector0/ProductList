@@ -13,7 +13,7 @@ $(document).ready(function () {
             var newProduct = $("<div class='productInBasket'></div>")
                 .append("<span class='productName'>" + productName + "</span>")
                 .append("<span> - </span>")
-                .append("<span class=\"productCount\">" + count + "</span>");
+                .append("<span class=\"productCount badge\">" + count + "</span>");
             $('.basket').prepend(newProduct);
             inBasket = true;
         } else {
@@ -31,7 +31,7 @@ $(document).ready(function () {
                 var newProduct = $("<div class='productInBasket'></div>")
                     .append("<span class='productName'>" + productName + "</span>")
                     .append("<span> - </span>")
-                    .append("<span class=\"productCount\">" + count + "</span>");
+                    .append("<span class=\"productCount badge\">" + count + "</span>");
                 $('.basket').prepend(newProduct);
             }
         }
