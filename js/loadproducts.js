@@ -7,7 +7,7 @@ $(document).ready(function () {
             $(xml).find('category').each(
                 function () {
                     var categoryName = $(this).attr('name');
-                    var category = $("<div class='panel panel-default'></div>")
+                    var category = $("<div class='panel panel-default panel-product'></div>")
                         .append("" +
                             "<div class='panel-heading'>" +
                             "<h3 class='panel-title'><strong>" + categoryName + "</strong></h3>" +

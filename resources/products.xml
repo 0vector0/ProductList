@@ -12,6 +12,16 @@
         </product>
         <product>
             <title>Творог</title>
+        </product><product>
+            <title>Сметана</title>
+        </product>
+        <product>
+            <title>Творог</title>
+        </product><product>
+            <title>Сметана</title>
+        </product>
+        <product>
+            <title>Творог</title>
         </product>
     </category>
 
@@ -21,6 +31,8 @@
             <title>Хлеб</title>
         </product>
         <product>
+            <title>Батон</title>
+        </product><product>
             <title>Батон</title>
         </product>
     </category>
@@ -32,7 +44,25 @@
         </product>
         <product>
             <title>Шарон</title>
+        </product><product>
+            <title>Шарон</title>
+        </product><product>
+            <title>Шарон</title>
         </product>
+    </category>
+
+    <!--Гарнир-->
+    <category name="Гарнир">
+        <product>
+            <title>Банани</title>
+        </product>
+        <product>
+            <title>Шарон</title>
+        </product><product>
+        <title>Шарон</title>
+    </product><product>
+        <title>Шарон</title>
+    </product>
     </category>
 
 </products>

@@ -12,3 +12,11 @@ body {
 /*    background: #d3a0a0;*/
     
 }
+
+
+.panel-product {
+    width: 200px;
+    float: left;
+   margin: 0 10px 5px 10px;
+
+}
