@@ -25,7 +25,7 @@ $(document).ready(function () {
                             if (atr == categoryName) {
                                 var newProduct = $("<li class='list-group-item'></li>")
                                     .append("<div class='product'><span>" + title + "</span> </div>");
-                                $(".allproducts").append(newProduct);
+                                $(category).append(newProduct);
                             }
                         });
                 }

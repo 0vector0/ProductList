@@ -25,4 +25,14 @@
         </product>
     </category>
 
+    <!--Фрукты-->
+    <category name="Фрукты">
+        <product>
+            <title>Банани</title>
+        </product>
+        <product>
+            <title>Шарон</title>
+        </product>
+    </category>
+
 </products>
