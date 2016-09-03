@@ -1,14 +1,11 @@
 $(document).on('click', '.product', function () {
 
-    console.log("hello");
-
     var productName = $(this).children().text();
-
     var basket = $('.basket');
-
     var inBasket = false;
+    var productInBasket = $('.productInBasket');
 
-    if ($('.productInBasket').length == 0) {
+    if (productInBasket.length == 0) {
         var count = 1;
         var newProduct = $("<li class='list-group-item productInBasket'></li>")
         // .append("<li class='list-group-item'></li>")
@@ -19,7 +16,7 @@ $(document).on('click', '.product', function () {
         $('.basket').prepend(newProduct);
         inBasket = true;
     } else {
-        $('.productInBasket').each(function (i, elem) {
+        productInBasket.each(function (i, elem) {
             var productNameInBasket = $(elem).children('.productName');
             var productCountInBasket = $(elem).children('.productCount');
 
@@ -27,7 +24,7 @@ $(document).on('click', '.product', function () {
                 productCountInBasket.text(parseInt(productCountInBasket.text()) + 1);
                 inBasket = true;
             }
-            ;
+
         });
         if (!inBasket) {
             var count = 1;
@@ -36,17 +33,14 @@ $(document).on('click', '.product', function () {
                 .append("<span class='productName'>" + productName + "</span>")
                 // .append("<span> - </span>")
                 .append("<span class=\"productCount badge\">" + count + "</span>");
-            $('.basket').prepend(newProduct);
+            basket.prepend(newProduct);
         }
     }
-    // });
 });
 
 
 $(document).on('click', '.productInBasket', function () {
-
-    productCountInBasket = $(this).children('.productCount');
-
+    var productCountInBasket = $(this).children('.productCount');
     if (productCountInBasket.text() > 1) {
         productCountInBasket.text(parseInt(productCountInBasket.text()) - 1);
     } else {
