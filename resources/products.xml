@@ -1,0 +1,68 @@
+<?xml version="1.1" encoding="utf-8"?>
+
+<products>
+
+    <!--Молочный отдел-->
+    <category name="Молочный отдел">
+        <product>
+            <title>Молоко</title>
+        </product>
+        <product>
+            <title>Сметана</title>
+        </product>
+        <product>
+            <title>Творог</title>
+        </product><product>
+            <title>Сметана</title>
+        </product>
+        <product>
+            <title>Творог</title>
+        </product><product>
+            <title>Сметана</title>
+        </product>
+        <product>
+            <title>Творог</title>
+        </product>
+    </category>
+
+    <!--Хлебный отдел-->
+    <category name="Хлебный отдел">
+        <product>
+            <title>Хлеб</title>
+        </product>
+        <product>
+            <title>Батон</title>
+        </product><product>
+            <title>Батон</title>
+        </product>
+    </category>
+
+    <!--Фрукты-->
+    <category name="Фрукты">
+        <product>
+            <title>Банани</title>
+        </product>
+        <product>
+            <title>Шарон</title>
+        </product><product>
+            <title>Шарон</title>
+        </product><product>
+            <title>Шарон</title>
+        </product>
+    </category>
+
+    <!--Гарнир-->
+    <category name="Гарнир">
+        <product>
+            <title>Банани</title>
+        </product>
+        <product>
+            <title>Шарон</title>
+        </product><product>
+        <title>Шарон</title>
+    </product><product>
+        <title>Шарон</title>
+    </product>
+    </category>
+
+</products>
