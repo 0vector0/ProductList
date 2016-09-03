@@ -1,45 +1,47 @@
-$(document).ready(function () {
+$(document).on('click', '.product', function () {
 
-    $('.product').click(function () {
+    console.log("hello");
 
-        var productName = $(this).children().text();
+    var productName = $(this).children().text();
 
-        var basket = $('.basket');
+    var basket = $('.basket');
 
-        var inBasket = false;
+    var inBasket = false;
 
-        if ($('.productInBasket').length == 0) {
+    if ($('.productInBasket').length == 0) {
+        var count = 1;
+        var newProduct = $("<li class='list-group-item productInBasket'></li>")
+        // .append("<li class='list-group-item'></li>")
+        // .append ("<div class='productInBasket'></div>")
+            .append("<span class='productName'>" + productName + "</span>")
+            // .append("<span> - </span>")
+            .append("<span class=\"productCount badge\">" + count + "</span>");
+        $('.basket').prepend(newProduct);
+        inBasket = true;
+    } else {
+        $('.productInBasket').each(function (i, elem) {
+            var productNameInBasket = $(elem).children('.productName');
+            var productCountInBasket = $(elem).children('.productCount');
+
+            if (productName == productNameInBasket.text()) {
+                productCountInBasket.text(parseInt(productCountInBasket.text()) + 1);
+                inBasket = true;
+            }
+            ;
+        });
+        if (!inBasket) {
             var count = 1;
             var newProduct = $("<li class='list-group-item productInBasket'></li>")
-                // .append("<li class='list-group-item'></li>")
-                // .append ("<div class='productInBasket'></div>")
+            // .append("<div class='productInBasket'></div>")
                 .append("<span class='productName'>" + productName + "</span>")
                 // .append("<span> - </span>")
                 .append("<span class=\"productCount badge\">" + count + "</span>");
             $('.basket').prepend(newProduct);
-            inBasket = true;
-        } else {
-            $('.productInBasket').each(function (i, elem) {
-                var productNameInBasket = $(elem).children('.productName');
-                var productCountInBasket = $(elem).children('.productCount');
-
-                if (productName == productNameInBasket.text()) {
-                    productCountInBasket.text(parseInt(productCountInBasket.text()) + 1);
-                    inBasket = true;
-                };
-            });
-            if (!inBasket) {
-                var count = 1;
-                var newProduct = $("<li class='list-group-item productInBasket'></li>")
-                    // .append("<div class='productInBasket'></div>")
-                    .append("<span class='productName'>" + productName + "</span>")
-                    // .append("<span> - </span>")
-                    .append("<span class=\"productCount badge\">" + count + "</span>");
-                $('.basket').prepend(newProduct);
-            }
         }
-    });
+    }
+    // });
 });
+
 
 $(document).on('click', '.productInBasket', function () {
 

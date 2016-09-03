@@ -22,7 +22,7 @@ $(document).ready(function () {
                             "<div class='panel-heading'>" +
                             "<h3 class='panel-title'><strong>" + categoryName + "</strong></h3>" +
                             "</div>")
-                        .append("<ul class='list-group'> </ul>");
+                        .append("<ul class='list-group allproducts'> </ul>");
 
                     $(category).appendTo('#categoryList');
 
@@ -34,37 +34,20 @@ $(document).ready(function () {
                                 title = $(this).find('title').text();
                             if (atr == categoryName) {
                                 var newProduct = $("<li class='list-group-item'></li>")
-                                    .append("<div class='products'></div>")
-                                    .append('<span>' + title + '</span>');
+                                    .append("<div class='product'><span>" + title + "</span> </div>");
+                                // .append('<span>' + title + '</span>');
 
-                                $(".list-group").append(newProduct);
+                                $(".allproducts").append(newProduct);
                             }
                         });
                 }
             );
 
-            // $(xml).find('product').each(
-            //     function () {
-            //         // $(parent(this)).atr('name').text()
-            //         var parent = $(this).parent();
-            //         var atr = parent.attr("name");
-            //         // console.log(atr);
-            //         var id = $(this).attr('id'),
-            //             title = $(this).find('title').text();
-            //         if (atr == 'Молочный отдел') {
-            //             $('<div class="products"></div>').html('<p>' + title + '</p>').appendTo('#milk');
-            //         }
-            //         if (atr == 'Хлебный отдел') {
-            //             $('<div class="products"></div>').html('<p>' + title + '</p>').appendTo('#bread');
-            //         }
-            //
-            //
-            //     }
-            // );
 
         }
 
     });
 
 });
+
 
