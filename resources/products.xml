@@ -1,0 +1,28 @@
+<?xml version="1.1" encoding="utf-8"?>
+
+<products>
+
+    <!--Молочный отдел-->
+    <category name="Молочный отдел">
+        <product>
+            <title>Молоко</title>
+        </product>
+        <product>
+            <title>Сметана</title>
+        </product>
+        <product>
+            <title>Творог</title>
+        </product>
+    </category>
+
+    <!--Хлебный отдел-->
+    <category name="Хлебный отдел">
+        <product>
+            <title>Хлеб</title>
+        </product>
+        <product>
+            <title>Батон</title>
+        </product>
+    </category>
+
+</products>
