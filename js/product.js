@@ -10,9 +10,11 @@ $(document).ready(function () {
 
         if ($('.productInBasket').length == 0) {
             var count = 1;
-            var newProduct = $("<div class='productInBasket'></div>")
+            var newProduct = $("<li class='list-group-item productInBasket'></li>")
+                // .append("<li class='list-group-item'></li>")
+                // .append ("<div class='productInBasket'></div>")
                 .append("<span class='productName'>" + productName + "</span>")
-                .append("<span> - </span>")
+                // .append("<span> - </span>")
                 .append("<span class=\"productCount badge\">" + count + "</span>");
             $('.basket').prepend(newProduct);
             inBasket = true;
@@ -28,9 +30,10 @@ $(document).ready(function () {
             });
             if (!inBasket) {
                 var count = 1;
-                var newProduct = $("<div class='productInBasket'></div>")
+                var newProduct = $("<li class='list-group-item productInBasket'></li>")
+                    // .append("<div class='productInBasket'></div>")
                     .append("<span class='productName'>" + productName + "</span>")
-                    .append("<span> - </span>")
+                    // .append("<span> - </span>")
                     .append("<span class=\"productCount badge\">" + count + "</span>");
                 $('.basket').prepend(newProduct);
             }
