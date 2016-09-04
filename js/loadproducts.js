@@ -21,7 +21,7 @@ $(document).ready(function () {
                             var parent = $(this).parent();
                             var atr = parent.attr("name");
                             var id = $(this).attr('id'),
-                                title = $(this).find('title').text();
+                                title = $(this).text();
                             if (atr == categoryName) {
                                 var newProduct = $("<li class='list-group-item'></li>")
                                     .append("<div class='product'><span>" + title + "</span> </div>");
@@ -41,7 +41,7 @@ $(document).ready(function () {
         day: 'numeric'
     };
 
-     $('.date').append(date.toLocaleString("ru", options));
+     $('.date').append(date.toLocaleString("uk", options));
 
 });
 
