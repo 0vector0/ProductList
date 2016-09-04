@@ -8,22 +8,22 @@ $(document).ready(function () {
                 function () {
                     var categoryName = $(this).attr('name');
 
-                    var category = $(
-                        "<div class='item'>" +
-                        "<div class='panel panel-default panel-product'>" +
-                        "<div class='panel-heading'>" +
-                        "<h3 class='panel-title'><strong>" + categoryName + "</strong></h3>" +
-                        "</div>" +
-                        "<ul class='list-group allproducts'></ul>" +
-                        "</div>" +
-                        "</div>");
+                    // var category = $(
+                    //     "<div class='item'>" +
+                    //     "<div class='panel panel-default panel-product'>" +
+                    //     "<div class='panel-heading'>" +
+                    //     "<h3 class='panel-title'><strong>" + categoryName + "</strong></h3>" +
+                    //     "</div>" +
+                    //     "<ul class='list-group allproducts'></ul>" +
+                    //     "</div>" +
+                    //     "</div>");
 
-                    // var category = $("<div class='panel panel-default panel-product item'></div>")
-                    //     .append("" +
-                    //         "<div class='panel-heading'>" +
-                    //         "<h3 class='panel-title'><strong>" + categoryName + "</strong></h3>" +
-                    //         "</div>")
-                    //     .append("<ul class='list-group allproducts'></ul>");
+                    var category = $("<div class='panel panel-default panel-product item'></div>")
+                        .append("" +
+                            "<div class='panel-heading'>" +
+                            "<h3 class='panel-title'><strong>" + categoryName + "</strong></h3>" +
+                            "</div>")
+                        .append("<ul class='list-group allproducts'></ul>");
 
                     $(category).appendTo('.masonry-index');
 
@@ -36,7 +36,7 @@ $(document).ready(function () {
                             if (atr == categoryName) {
                                 var newProduct = $("<li class='list-group-item'></li>")
                                     .append("<div class='product'><span>" + title + "</span> </div>");
-                                $(newProduct).appendTo(category.children(category.children('.allproducts')));
+                                $(newProduct).appendTo(category.children('.allproducts'));
                             }
                         });
                 }
@@ -54,6 +54,7 @@ $(document).ready(function () {
 
     $('.date').append(date.toLocaleString("uk", options));
 
+    // window.resizeBy(-1000, 0);
 });
 
 
