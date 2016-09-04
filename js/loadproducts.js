@@ -9,11 +9,13 @@ $(document).ready(function () {
                     var categoryName = $(this).attr('name');
 
                     var category = $(
-                        "<div class='panel panel-default panel-product item'>" +
-                            "<div class='panel-heading'>" +
-                                "<h3 class='panel-title'><strong>" + categoryName + "</strong></h3>" +
-                            "</div>" +
-                            "<ul class='list-group allproducts'></ul>" +
+                        "<div class='item'>" +
+                        "<div class='panel panel-default panel-product'>" +
+                        "<div class='panel-heading'>" +
+                        "<h3 class='panel-title'><strong>" + categoryName + "</strong></h3>" +
+                        "</div>" +
+                        "<ul class='list-group allproducts'></ul>" +
+                        "</div>" +
                         "</div>");
 
                     // var category = $("<div class='panel panel-default panel-product item'></div>")
@@ -23,7 +25,7 @@ $(document).ready(function () {
                     //         "</div>")
                     //     .append("<ul class='list-group allproducts'></ul>");
 
-                    $(category).appendTo('#categoryList');
+                    $(category).appendTo('.masonry-index');
 
                     $(xml).find('product').each(
                         function () {
@@ -34,7 +36,7 @@ $(document).ready(function () {
                             if (atr == categoryName) {
                                 var newProduct = $("<li class='list-group-item'></li>")
                                     .append("<div class='product'><span>" + title + "</span> </div>");
-                                $(newProduct).appendTo(category.children('.allproducts'));
+                                $(newProduct).appendTo(category.children(category.children('.allproducts')));
                             }
                         });
                 }
@@ -50,7 +52,7 @@ $(document).ready(function () {
         day: 'numeric'
     };
 
-     $('.date').append(date.toLocaleString("uk", options));
+    $('.date').append(date.toLocaleString("uk", options));
 
 });
 
