@@ -32,6 +32,17 @@ $(document).ready(function () {
             );
         }
     });
+
+    var date = new Date();
+
+    var options = {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    };
+
+     $('.date').append(date.toLocaleString("ru", options));
+
 });
 
 

@@ -9,7 +9,7 @@ body {
 }
 
 @media print {
-    .left-column {
+    .must-hide {
         display: none;
     }
 
