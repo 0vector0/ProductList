@@ -2,21 +2,22 @@ body {
     padding-top: 50px;
 }
 
-/*
-.starter-template {
-    padding: 40px 15px;
-    text-align: center;
-}
-*/
-.product {
-/*    background: #d3a0a0;*/
-    
-}
-
-
 .panel-product {
     width: 200px;
+    margin: 0 10px 20px 10px;
     float: left;
-   margin: 0 10px 5px 10px;
+}
 
+@media print {
+    .left-column {
+        display: none;
+    }
+
+    div.basket.list-group {
+        font-size: 16px;
+    }
+
+    span.productCount.badge {
+        font-size: 16px;
+    }
 }

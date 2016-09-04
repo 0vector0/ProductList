@@ -8,8 +8,10 @@
     <meta name="author" content="">
     <title>Список продуктов в магазин</title>
     <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles-masonry.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
     <link rel="stylesheet" href="css/styles.css">
     <!--[if IE]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -46,12 +48,11 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 left-column">
             <div>
                 <h3>Общий список продуктов</h3>
             </div>
-            <!--<div id="categoryList">-->
-                <div class="row masonry-archive" id="categoryList" data-columns>
+            <div id="categoryList">
                 <!--<div class="panel panel-default">-->
                 <!--<div class="panel-heading">-->
                 <!--<h3 class="panel-title"><strong>Молочный отдел</strong></h3>-->
@@ -93,7 +94,7 @@
                 <!--</div>-->
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 right-column">
             <div>
                 <h3>Корзина</h3>
             </div>
@@ -110,7 +111,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="js/salvattore.min.js"></script>
 
 <script src="js/loadproducts.js"></script>
 <script src="js/product.js"></script>
