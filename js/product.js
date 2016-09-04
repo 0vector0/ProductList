@@ -1,4 +1,4 @@
-$(document).on('click', '.product', function () {
+$(document).on('click touch', '.product', function () {
 
     var productName = $(this).children().text();
     var basket = $('.basket');
@@ -39,7 +39,7 @@ $(document).on('click', '.product', function () {
 });
 
 
-$(document).on('click', '.productInBasket', function () {
+$(document).on('click touch', '.productInBasket', function () {
     var productCountInBasket = $(this).children('.productCount');
     if (productCountInBasket.text() > 1) {
         productCountInBasket.text(parseInt(productCountInBasket.text()) - 1);
