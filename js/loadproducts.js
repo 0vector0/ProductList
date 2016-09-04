@@ -7,12 +7,21 @@ $(document).ready(function () {
             $(xml).find('category').each(
                 function () {
                     var categoryName = $(this).attr('name');
-                    var category = $("<div class='panel panel-default panel-product item'></div>")
-                        .append("" +
+
+                    var category = $(
+                        "<div class='panel panel-default panel-product item'>" +
                             "<div class='panel-heading'>" +
-                            "<h3 class='panel-title'><strong>" + categoryName + "</strong></h3>" +
-                            "</div>")
-                        .append("<ul class='list-group allproducts'></ul>");
+                                "<h3 class='panel-title'><strong>" + categoryName + "</strong></h3>" +
+                            "</div>" +
+                            "<ul class='list-group allproducts'></ul>" +
+                        "</div>");
+
+                    // var category = $("<div class='panel panel-default panel-product item'></div>")
+                    //     .append("" +
+                    //         "<div class='panel-heading'>" +
+                    //         "<h3 class='panel-title'><strong>" + categoryName + "</strong></h3>" +
+                    //         "</div>")
+                    //     .append("<ul class='list-group allproducts'></ul>");
 
                     $(category).appendTo('#categoryList');
 
