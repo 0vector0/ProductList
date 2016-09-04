@@ -2,67 +2,84 @@
 
 <products>
 
-    <!--Молочный отдел-->
-    <category name="Молочный отдел">
-        <product>
-            <title>Молоко</title>
-        </product>
-        <product>
-            <title>Сметана</title>
-        </product>
-        <product>
-            <title>Творог</title>
-        </product><product>
-            <title>Сметана</title>
-        </product>
-        <product>
-            <title>Творог</title>
-        </product><product>
-            <title>Сметана</title>
-        </product>
-        <product>
-            <title>Творог</title>
-        </product>
+    <!--Овочі-->
+    <category name="Овочі">
+        <product>Картопля</product>
+        <product>Морква</product>
+        <product>Цибуля</product>
+        <product>Буряк</product>
+        <product>Петрушка</product>
+        <product>Укроп</product>
+        <product>Огірки</product>
+        <product>Помідори</product>
+        <product>Капуста</product>
+        <product>Болгарський перець</product>
+        <product>Листя салату</product>
     </category>
 
-    <!--Хлебный отдел-->
-    <category name="Хлебный отдел">
-        <product>
-            <title>Хлеб</title>
-        </product>
-        <product>
-            <title>Батон</title>
-        </product><product>
-            <title>Батон</title>
-        </product>
+    <!--Овочі-->
+    <category name="Фрукти">
+        <product>Яблука</product>
+        <product>Банани</product>
+        <product>Шарон</product>
+        <product>Апельсини</product>
+        <product>Мандарини</product>
+        <product>Лимон</product>
+        <product>Груші</product>
+        <product>Виноград</product>
+        <product>Полуниця</product>
+        <product>Малина</product>
+        <product>Кавун</product>
+        <product>Диня</product>
+        <product>Смородина</product>
     </category>
 
-    <!--Фрукты-->
-    <category name="Фрукты">
-        <product>
-            <title>Банани</title>
-        </product>
-        <product>
-            <title>Шарон</title>
-        </product><product>
-            <title>Шарон</title>
-        </product><product>
-            <title>Шарон</title>
-        </product>
+    <!--Молочка-->
+    <category name="Молочка">
+        <product>Софійці кефір</product>
+        <product>Софійці творог</product>
+        <product>Молоко волошкове поле</product>
+        <product>Кефір дорослий порціонний</product>
+        <product>Вершкове масло</product>
+        <product>Сметана</product>
+        <product>Сиркова маса</product>
+        <product>Йогурт дорослий</product>
     </category>
 
-    <!--Гарнир-->
-    <category name="Гарнир">
-        <product>
-            <title>Банани</title>
-        </product>
-        <product>
-            <title>Шарон</title>
-        </product><product>
-        <title>Шарон</title>
-    </product><product>
-        <title>Шарон</title>
-    </product>
+    <!--Консервація-->
+    <category name="Консервація">
+        <product>Варення</product>
+        <product>Закрутки (помідори, огірки, компоти, томат сік і т.д.)</product>
+        <product>Горошок консервований</product>
+        <product>Кефір дорослий порціонний</product>
+        <product>Кукурудза консервована</product>
+        <product>Мед</product>
     </category>
+
+    <!--Заморозка-->
+    <category name="Заморозка">
+        <product>Телячі котлетки</product>
+        <product>Індичі котлетки</product>
+        <product>Куряче/індиче філе</product>
+        <product>Теляче м'ясо куском</product>
+        <product>Курячі ніжки</product>
+        <product>Заморожені овочі</product>
+        <product>Рибні котлетки</product>
+    </category>
+
+    <!--Гарнір-->
+    <category name="Гарнір">
+        <product>Овсянка</product>
+        <product>Гречка</product>
+        <product>Рис</product>
+        <product>Кукурудзяна</product>
+        <product>Ячка/пшенична</product>
+        <product>Манка</product>
+        <product>Макарони рожки</product>
+        <product>Макарони спіральки</product>
+        <product>Горох</product>
+        <product>Листи лазаньї</product>
+    </category>
+
 
 </products>
