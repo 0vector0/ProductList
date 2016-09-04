@@ -2,11 +2,45 @@ body {
     padding-top: 50px;
 }
 
-/*.panel-product {*/
-/*width: 190px;*/
-/*margin: 0 10px 20px 10px;*/
-/*float: left;*/
-/*}*/
+/* Masonry bricks or child elements */
+.item {
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+}
+
+/* Masonry container */
+@media screen and (max-width: 767px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
 
 @media print {
     .must-hide {
@@ -21,3 +55,4 @@ body {
         font-size: 16px;
     }
 }
+

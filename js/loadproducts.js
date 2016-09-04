@@ -8,16 +8,6 @@ $(document).ready(function () {
                 function () {
                     var categoryName = $(this).attr('name');
 
-                    // var category = $(
-                    //     "<div class='item'>" +
-                    //     "<div class='panel panel-default panel-product'>" +
-                    //     "<div class='panel-heading'>" +
-                    //     "<h3 class='panel-title'><strong>" + categoryName + "</strong></h3>" +
-                    //     "</div>" +
-                    //     "<ul class='list-group allproducts'></ul>" +
-                    //     "</div>" +
-                    //     "</div>");
-
                     var category = $("<div class='panel panel-default panel-product item'></div>")
                         .append("" +
                             "<div class='panel-heading'>" +
@@ -25,7 +15,7 @@ $(document).ready(function () {
                             "</div>")
                         .append("<ul class='list-group allproducts'></ul>");
 
-                    $(category).appendTo('.masonry-index');
+                    $(category).appendTo('.masonry');
 
                     $(xml).find('product').each(
                         function () {
@@ -54,7 +44,6 @@ $(document).ready(function () {
 
     $('.date').append(date.toLocaleString("uk", options));
 
-    // window.resizeBy(-1000, 0);
 });
 
 
