@@ -47,3 +47,7 @@ $(document).on('click touch', '.productInBasket', function () {
         $(this).remove();
     }
 });
+
+$(document).on('click', '#btn-print', function () {
+    window.print();
+});
