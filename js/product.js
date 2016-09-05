@@ -8,11 +8,14 @@ $(document).on('click touch', '.product', function () {
     if (productInBasket.length == 0) {
         var count = 1;
         var newProduct = $("<li class='list-group-item productInBasket'></li>")
-        // .append("<li class='list-group-item'></li>")
-        // .append ("<div class='productInBasket'></div>")
-            .append("<span class='productName'>" + productName + "</span>")
-            // .append("<span> - </span>")
-            .append("<span class=\"productCount badge\">" + count + "</span>");
+            .append('<button type="button" class="btn btn-default btn-xs">' +
+                '<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>' +
+                '</button>')
+            .append('<span class="productCount">' + ' ' + count + ' ' + '</span>')
+            .append('<button type="button" class="btn btn-default btn-xs">' +
+                '<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>' +
+                '</button>')
+            .append('<span class="productName">' + productName + '</span>');
         $('.basket').prepend(newProduct);
         inBasket = true;
     } else {
@@ -29,10 +32,14 @@ $(document).on('click touch', '.product', function () {
         if (!inBasket) {
             var count = 1;
             var newProduct = $("<li class='list-group-item productInBasket'></li>")
-            // .append("<div class='productInBasket'></div>")
-                .append("<span class='productName'>" + productName + "</span>")
-                // .append("<span> - </span>")
-                .append("<span class=\"productCount badge\">" + count + "</span>");
+                .append('<button type="button" class="btn btn-default btn-xs">' +
+                    '<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>' +
+                    '</button>')
+                .append('<span class="productCount">' + ' ' + count + ' ' + '</span>')
+                .append('<button type="button" class="btn btn-default btn-xs">' +
+                    '<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>' +
+                    '</button>')
+                .append('<span class="productName">' + productName + '</span>');
             basket.prepend(newProduct);
         }
     }
