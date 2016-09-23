@@ -80,6 +80,53 @@
         <product>Горох</product>
         <product>Листи лазаньї</product>
     </category>
+    
+     <!--Інше-->
+      <category name="Інше">
+        <product>Олія</product>
+        <product>Яйця</product>
+        <product>Мука пшенична</product>
+        <product>Дріжджі сухі</product>
+        <product>Розрихлювач тіста</product>
+        <product>Цукор</product>
+        <product>Ваніль</product>
+        <product>Кориця</product>
+        <product>Імбир мелений</product>
+        <product>Сіль</product>
+        <product>Лавровий лист</product>
+        <product>Чай</product>
+        <product>Кава</product>
+        <product>Київ хліб</product>
+        <product>Хліб</product>
+        <product>Хлібці</product>
+    </category>
 
+     <!--Дрібниці-->
+      <category name="Інше">
+        <product>Пакети для сміття</product>
+        <product>Кухонні рушники</product>
+        <product>Одноразові серветки</product>
+        <product>Серветки для столу</product>
+        <product>Серветки для прибирання</product>
+        <product>Губки для миття посуду</product>
+        <product>Харчова плівка</product>
+        <product>Фольга</product>
+        <product>Рукав</product>
+        <product>Одноразові пакети</product>
+        <product>Доместос\Силіт бенк</product>
+        <product>Засіб для миття посуду</product>
+        <product>Порошок дитячий</product>
+        <product>Порошок звичайний</product>
+        <product>Ватні палочки</product>
+        <product>Ватні диски</product>
+        <product>Шампунь</product>
+        <product>Гель для душу</product>
+        <product>Зубна паста</product>
+        <product>Зубні щіткии</product>
+        <product>Мило для рук рідке</product>
+        <product>Мило для ванниу</product>
+        <product>Туалетний папір</product>
+        <product>Освіжувач повітря</product>
+    </category>
 
 </products>
