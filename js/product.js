@@ -9,11 +9,11 @@ $(document).on('click touch', '.product', function () {
         var count = 1;
         var newProduct = $("<li class='list-group-item productInBasket'></li>")
             .append('<button type="button" class="btn btn-default btn-xs">' +
-                '<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>' +
+                '<span class="glyphicon glyphicon-plus hidden-print" aria-hidden="true"></span>' +
                 '</button>')
             .append('<span class="productCount">' + ' ' + count + ' ' + '</span>')
             .append('<button type="button" class="btn btn-default btn-xs">' +
-                '<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>' +
+                '<span class="glyphicon glyphicon-minus hidden-print" aria-hidden="true"></span>' +
                 '</button>')
             .append('<span class="productName">' + productName + '</span>');
         $('.basket').prepend(newProduct);
@@ -33,11 +33,11 @@ $(document).on('click touch', '.product', function () {
             var count = 1;
             var newProduct = $("<li class='list-group-item productInBasket'></li>")
                 .append('<button type="button" class="btn btn-default btn-xs">' +
-                    '<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>' +
+                    '<span class="glyphicon glyphicon-plus hidden-print" aria-hidden="true"></span>' +
                     '</button>')
                 .append('<span class="productCount">' + ' ' + count + ' ' + '</span>')
                 .append('<button type="button" class="btn btn-default btn-xs">' +
-                    '<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>' +
+                    '<span class="glyphicon glyphicon-minus hidden-print" aria-hidden="true"></span>' +
                     '</button>')
                 .append('<span class="productName">' + productName + '</span>');
             basket.prepend(newProduct);
